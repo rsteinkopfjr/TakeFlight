@@ -1,0 +1,18 @@
+module.exports = function(sequelize, DataTypes) {
+    var User = sequelize.define("User", {
+      name: DataTypes.STRING,
+      google_id: DataTypes.STRING,
+      email: DataTypes.STRING,
+      password: DataTypes.STRING,
+      admin: DataTypes.BOOLEAN
+    });
+
+    // User.associate = function(models) {
+    //   // a user can have many orders
+    //   User.hasMany(models.Order, {
+        
+    //   });
+    // };
+    
+    return User;
+  };
