@@ -41,7 +41,9 @@ class Home extends Component {
             </Col>
           </Row>
         </Container>
-        <div className="parallax" />
+        <div className="parallax">
+        <p id="quote">Technology is a soaring exercise of the human imagination.</p>
+        </div>
         <Container fluid>
           <Row>
             <Col size="md-12">

@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../App.css";
 
 function Footer() {
   return (
     <footer>
-      <nav className="footer navbar navbar-light bg-light">
-        <Link to="/" className="navbar-brand">
-        </Link>
+      <nav className="footer navbar-light bg-light">
+        <div id="footerText">© Copyright 2019 | Take Flight</div>
       </nav>
     </footer>
   );

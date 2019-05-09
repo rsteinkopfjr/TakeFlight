@@ -1,6 +1,4 @@
 #app {
-  margin-left: 10px;
-  margin-right: 10px;
   font-family: 'Economica', sans-serif;
   background-image: url("./images/topography.png");
 }
@@ -27,6 +25,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+#quote {
+  color: white;
+  font-size: 25px;
 }
 #teamTitle {
   text-align: center;
@@ -36,6 +42,18 @@
 .teamCard h3, .teamCard p {
   text-align: center;
 }
+/* End Home */
+
+/*Guide Page */
+#droneParts {
+  text-align: center;
+  font-size: 25px;
+  margin: auto;
+}
+#dronePart {
+  margin: auto;
+}
+/* End Guide
 
 /* End Pages */
 
@@ -89,6 +107,11 @@
 .footer {
   border-top: #566473 solid 2px;
   border-bottom: none;
+}
+#footerText {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* End Footer */

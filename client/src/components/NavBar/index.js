@@ -46,29 +46,17 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link
-                to="/index"
-                id="homeNavBtn"
-                className="nav-link"
-              >
+              <Link to="/index" id="homeNavBtn" className="nav-link">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/guide"
-                id="guideNavBtn"
-                className="nav-link"
-              >
+              <Link to="/guide" id="guideNavBtn" className="nav-link">
                 Guide
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/account"
-                id="accountNavBtn"
-                className="nav-link"
-              >
+              <Link to="/account" id="accountNavBtn" className="nav-link">
                 {this.props.user.email}
               </Link>
             </li>
@@ -79,9 +67,12 @@ class NavBar extends Component {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            {this.props.user.email ? 
-            <LogOut /> :
-            <LogIn {...this.props} /> }
+            {/* {this.props.user.email ? 
+            <LogOut {...this.props} /> :
+            <LogIn {...this.props} /> } */}
+
+            <LogOut {...this.props} />
+            <LogIn {...this.props} />
             <SignUp {...this.props} />
           </ul>
         </div>

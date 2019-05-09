@@ -9,8 +9,7 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    user: {},
-    page: ""
+    user: {}
   };
   setUser = user => {
     this.setState({
