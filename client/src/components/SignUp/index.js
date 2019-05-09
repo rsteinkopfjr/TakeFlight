@@ -49,7 +49,7 @@ class SignUp extends Component {
   };
   render() {
     return (
-      <li className="nav-item" id="signupBtn">
+      <div className="nav-item" id="signupBtn">
         <button
           type="button"
           className="btn btn-dark"
@@ -124,7 +124,7 @@ class SignUp extends Component {
             </div>
           </div>
         </div>
-      </li>
+      </div>
     );
   }
 }

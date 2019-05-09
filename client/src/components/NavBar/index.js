@@ -50,7 +50,6 @@ class NavBar extends Component {
                 to="/index"
                 id="homeNavBtn"
                 className="nav-link"
-                activeClassName="active"
               >
                 Home
               </Link>
@@ -60,7 +59,6 @@ class NavBar extends Component {
                 to="/guide"
                 id="guideNavBtn"
                 className="nav-link"
-                activeClassName="active"
               >
                 Guide
               </Link>
@@ -70,7 +68,6 @@ class NavBar extends Component {
                 to="/account"
                 id="accountNavBtn"
                 className="nav-link"
-                activeClassName="active"
               >
                 {this.props.user.email}
               </Link>

@@ -5,6 +5,7 @@ import "../App.css";
 import Farhan from "../components/Cards/Farhan";
 import Jose from "../components/Cards/Jose";
 import Robert from "../components/Cards/Robert";
+import SignUp from "../components/SignUp/index";
 
 class Home extends Component {
   render() {
@@ -25,9 +26,17 @@ class Home extends Component {
                 </h2>
                 <br></br>
                 <br></br>
-                <h4>Track all of the data from each and every flight.</h4>
+                <h4>Control your drone seamlessly with our custom designed controller.</h4>
                 <br></br>
-                <h4>Display your data in easy to view charts and grids.</h4>
+                <h4>Track and store all of the data from each and every flight.</h4>
+                <br></br>
+                <h4>Display your data in easy to view charts and graphs.</h4>
+                <br></br>
+                <h4>Experience the future of drone technology with Take Flight!</h4>
+                <br></br>
+                <br></br>
+                <h4>Sign Up Now!</h4>
+                <SignUp />
               </div>
             </Col>
           </Row>

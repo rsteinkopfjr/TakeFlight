@@ -1,6 +1,7 @@
 #app {
   margin-left: 10px;
   margin-right: 10px;
+  font-family: 'Economica', sans-serif;
 }
 /* Pages Styles */
 
@@ -28,6 +29,8 @@
 }
 #teamTitle {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .teamCard h3, .teamCard p {
   text-align: center;
@@ -39,6 +42,8 @@
 
 .navbar {
   border-bottom: #566473 solid 2px;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
 }
 #signup {
   margin: 5px;
