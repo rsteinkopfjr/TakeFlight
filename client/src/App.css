@@ -1,33 +1,88 @@
-.App {
+#app {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Pages Styles */
+
+/* Home Page */
+#droneSection,
+#aboutSection {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#aboutSection {
+  text-align: center;
+}
+.parallax {
+  /* The image used */
+  background-image: url("./images/droneFlight.jpg");
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#teamTitle {
+  text-align: center;
+}
+.teamCard h3, .teamCard p {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* End Pages */
+
+/* Navbar Styles */
+
+.navbar {
+  border-bottom: #566473 solid 2px;
+}
+#signup {
+  margin: 5px;
+  border-color: #566473;
+  background-color: #566473;
+  color: #BFBFBF;
+}
+#login, #logout {
+  margin: 5px;
+  border-color: #566473;
+  color: #566473;
+}
+#homeNavBtn,
+#accountNavBtn,
+#guideNavBtn {
+  color: #566473;
+}
+.nav-link.active {
+  border-bottom: dashed #111111 2px;
+}
+#homeNavBtn:hover,
+#accountNavBtn:hover,
+#guideNavBtn:hover {
+  color: #94DD98;
+  border-color: #94DD98;
+}
+#login:hover, #logout:hover {
+  border-color: #3B8C23;
+  background-color: #f8f9fa;
+  color: #3B8C23;
+}
+#signup:hover {
+  background-color: #3B8C23;
+  border-color: #3B8C23;
+  color: #f8f9fa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* End Navbar */
+
+/* Footer Styles */
+
+.footer {
+  border-top: #566473 solid 2px;
+  border-bottom: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* End Footer */

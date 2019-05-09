@@ -3,17 +3,22 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/index";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/index";
-import Leaders from "./pages/Leaders";
+import Account from "./pages/Account";
 import Guide from "./pages/Guide";
-// import UserAccount from "./components/UserAccount/UserAccount";
 
 class App extends Component {
   state = {
-    user: {}
+    user: {},
+    page: ""
   };
   setUser = user => {
     this.setState({
       user: user
+    });
+  };
+  setPage = page => {
+    this.setState({
+      page: page
     });
   };
 
@@ -21,11 +26,11 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <NavBar setUser={this.setUser} user={this.state.user} />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/index" component={Home} />
-          <Route exact path="/leaders" component={Leaders} />
-          <Route exact path="/guide" component={Guide} />
+          <NavBar setUser={this.setUser} user={this.state.user} setPage="home" page={this.state.page} />
+          <Route exact path="/" component={Home} setPage="home" page={this.state.page} />
+          <Route exact path="/index" component={Home} setPage={this.setPage} page={this.state.page} />
+          <Route exact path="/guide" component={Guide} setPage={this.setPage} page={this.state.page} />
+          <Route exact path="/account" component={Account} setPage={this.setPage} page={this.state.page} />
           <Footer />
         </div>
       </Router>

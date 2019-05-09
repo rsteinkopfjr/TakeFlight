@@ -116,6 +116,7 @@ class SignUp extends Component {
                   type="button"
                   className="btn btn-primary"
                   onClick={this.handleFormSubmit}
+                  data-dismiss="modal"
                 >
                   Submit
                 </button>

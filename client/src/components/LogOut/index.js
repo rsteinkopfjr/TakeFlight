@@ -8,14 +8,15 @@ class LogOut extends Component {
     });
   };
   logout = () => {
-    AUTHAPI.getLogout().then(out => {
+    AUTHAPI.getLogout().then( out => {
       this.setState({
         user: {}
-      });
-      window.location = "/logout";
+      })
+      window.location = '/';
       // this.context.router.history.push(`/logout`);
-    });
-  };
+    })
+  }
+
   render() {
     return (
       <li className="nav-item" id="logoutBtn">
@@ -55,9 +56,9 @@ class LogOut extends Component {
                   Cancel
                 </button>
                 <button
-                  onClick={this.logout}
                   type="button"
                   className="btn btn-primary"
+                  onClick={this.logout}
                   data-dismiss="modal"
                 >
                   Log Out

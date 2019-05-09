@@ -126,6 +126,7 @@ class LogIn extends Component {
                   type="button"
                   onClick={this.handleFormSubmit}
                   className="btn btn-primary"
+                  data-dismiss="modal"
                 >
                   Submit
                 </button>

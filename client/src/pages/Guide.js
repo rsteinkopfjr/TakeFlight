@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
-import "./style.css";
+import "../App.css";
 
 class Guide extends Component {
     render() {

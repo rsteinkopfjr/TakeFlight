@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
-import "./style.css";
+import "../App.css";
 
-class Leaders extends Component {
+class Account extends Component {
     render() {
         return(
             <Container fluid>
                 <Row>
                     <Col size="md-12">
-                        <h2>Leaderboard</h2>
+                        <h2>Account</h2>
                     </Col>
                 </Row>
             </Container>
@@ -16,4 +16,4 @@ class Leaders extends Component {
     }
 }
 
-export default Leaders;
+export default Account;

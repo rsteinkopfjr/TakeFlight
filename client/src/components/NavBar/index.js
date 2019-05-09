@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/takeFlight.svg";
-import "./style.css";
+import "../../App.css";
 import SignUp from "../SignUp/index";
 import LogIn from "../LogIn/index";
 import LogOut from "../LogOut/index";
@@ -14,11 +14,16 @@ class NavBar extends Component {
       user: user
     });
   };
+  setPage = page => {
+    this.setState({
+      page: page
+    });
+  };
 
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="/">
+        <div className="navbar-brand">
           <img
             src={logo}
             id="takeFlightLogo"
@@ -26,7 +31,7 @@ class NavBar extends Component {
             height="65"
             width="260"
           />
-        </a>
+        </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -42,28 +47,15 @@ class NavBar extends Component {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
-                to="/"
+                to="/index"
                 id="homeNavBtn"
                 className={
-                  window.location.pathname === "/"
+                  window.location.pathname === "/index"
                     ? "nav-link active"
                     : "nav-link"
                 }
               >
                 Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/leaders"
-                id="leaderNavBtn"
-                className={
-                  window.location.pathname === "/leaders"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
-              >
-                Leaderboard
               </Link>
             </li>
             <li className="nav-item">
@@ -76,7 +68,20 @@ class NavBar extends Component {
                     : "nav-link"
                 }
               >
-                User Guide
+                Guide
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/account"
+                id="accountNavBtn"
+                className={
+                  window.location.pathname === "/account"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                {this.props.user.email}
               </Link>
             </li>
           </ul>
