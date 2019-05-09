@@ -10,7 +10,7 @@ import SignUp from "../components/SignUp/index";
 class Home extends Component {
   render() {
     return (
-      <div id="app">
+      <div>
         <Container fluid>
           <Row>
             <Col size="md-6">

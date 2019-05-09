@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer/index";
 import Account from "./pages/Account";
 import Guide from "./pages/Guide";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -20,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div id="app">
           <NavBar setUser={this.setUser} user={this.state.user} />
           <Switch>
             <Route exact path="/" component={Home} />
