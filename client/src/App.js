@@ -16,21 +16,16 @@ class App extends Component {
       user: user
     });
   };
-  setPage = page => {
-    this.setState({
-      page: page
-    });
-  };
 
   render() {
     return (
       <Router>
         <div>
-          <NavBar setUser={this.setUser} user={this.state.user} setPage="home" page={this.state.page} />
-          <Route exact path="/" component={Home} setPage="home" page={this.state.page} />
-          <Route exact path="/index" component={Home} setPage={this.setPage} page={this.state.page} />
-          <Route exact path="/guide" component={Guide} setPage={this.setPage} page={this.state.page} />
-          <Route exact path="/account" component={Account} setPage={this.setPage} page={this.state.page} />
+          <NavBar setUser={this.setUser} user={this.state.user} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/index" component={Home} />
+          <Route exact path="/guide" component={Guide} />
+          <Route exact path="/account" component={Account} />
           <Footer />
         </div>
       </Router>

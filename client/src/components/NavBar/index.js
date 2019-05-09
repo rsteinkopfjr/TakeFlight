@@ -49,11 +49,8 @@ class NavBar extends Component {
               <Link
                 to="/index"
                 id="homeNavBtn"
-                className={
-                  window.location.pathname === "/index"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
+                className="nav-link"
+                activeClassName="active"
               >
                 Home
               </Link>
@@ -62,11 +59,8 @@ class NavBar extends Component {
               <Link
                 to="/guide"
                 id="guideNavBtn"
-                className={
-                  window.location.pathname === "/guide"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
+                className="nav-link"
+                activeClassName="active"
               >
                 Guide
               </Link>
@@ -75,11 +69,8 @@ class NavBar extends Component {
               <Link
                 to="/account"
                 id="accountNavBtn"
-                className={
-                  window.location.pathname === "/account"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
+                className="nav-link"
+                activeClassName="active"
               >
                 {this.props.user.email}
               </Link>
@@ -91,8 +82,9 @@ class NavBar extends Component {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            <LogOut />
-            <LogIn {...this.props} />
+            {this.props.user.email ? 
+            <LogOut /> :
+            <LogIn {...this.props} /> }
             <SignUp {...this.props} />
           </ul>
         </div>
