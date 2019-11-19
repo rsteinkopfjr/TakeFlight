@@ -21,8 +21,21 @@ class Account extends Component {
                 }
                 // {type: 'bar', x: [1, -5, -15,-13,0], y: [4, -8, -6,-7,0]},
               ]}
-              layout={{ width: 420, height: 340, title: "Drone Data" }}
+              layout={{ width: 620, height: 540, title: "Drone VGX Data" }}
             />
+            <Plot
+            data={[
+              // {
+              //   x: [1, -5, -15, -13, 0, 13, 18, 5, -7, 2, 5 - 9, -20, -19],
+              //   y: [4, -8, -6, -7, 0, 7, 3, -3, -11, -13, 5, 11, 1, -1],
+              //   type: "scatter",
+              //   mode: "lines+points",
+              //   marker: { color: "red" }
+              // }
+              {type: 'bar', x: [1, -5, -15,-13,0], y: [4, -8, -6,-7,0]}
+            ]}
+            layout={{ width: 620, height: 540, title: "Drone AGX Data" }}
+          />
           </Col>
         </Row>
       </Container>

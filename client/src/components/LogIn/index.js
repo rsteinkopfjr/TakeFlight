@@ -96,7 +96,6 @@ class LogIn extends Component {
                       name="email"
                       type="text"
                       className="form-control"
-                      id="email"
                     />
                   </div>
                   <div className="form-group">
@@ -109,7 +108,6 @@ class LogIn extends Component {
                       name="password"
                       type="password"
                       className="form-control"
-                      id="password"
                     />
                   </div>
                 </form>

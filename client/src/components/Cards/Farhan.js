@@ -5,7 +5,7 @@ class Farhan extends Component {
     render() {
         return(
             <div className="container teamCard">
-                <h3>Farhan Afzul</h3>
+                <h3>Farhan Afzal</h3>
                 <p>Back-End Developer</p>
             </div>
         );

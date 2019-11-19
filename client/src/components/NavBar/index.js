@@ -14,15 +14,20 @@ class NavBar extends Component {
       user: user
     });
   };
-  setPage = page => {
-    this.setState({
-      page: page
-    });
+  state = {
+    isTop: true
   };
-
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 100;
+        if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+        }
+    });
+  }
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className={this.state.isTop ? 'unscrolled navbar navbar-expand-lg navbar-light fixed-top': 'scrolled navbar navbar-expand-lg navbar-light fixed-top'}>
         <div className="navbar-brand">
           <img
             src={logo}
@@ -67,12 +72,12 @@ class NavBar extends Component {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            {/* {this.props.user.email ? 
+            {this.props.user.email ? 
             <LogOut {...this.props} /> :
-            <LogIn {...this.props} /> } */}
+            <LogIn {...this.props} /> }
 
-            <LogOut {...this.props} />
-            <LogIn {...this.props} />
+            {/* <LogOut {...this.props} />
+            <LogIn {...this.props} /> */}
             <SignUp {...this.props} />
           </ul>
         </div>

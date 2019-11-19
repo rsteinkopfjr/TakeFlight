@@ -12,6 +12,7 @@
 }
 #aboutSection {
   text-align: center;
+  color: #f8f9fa;
 }
 .parallax {
   /* The image used */
@@ -32,7 +33,7 @@
 }
 #quote {
   color: white;
-  font-size: 25px;
+  font-size: 45px;
 }
 #teamTitle {
   text-align: center;
@@ -40,6 +41,28 @@
   margin-bottom: 20px;
 }
 .teamCard h3, .teamCard p {
+  text-align: center;
+}
+#videoContainer {
+  position: relative;
+}
+#droneVideo {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+#videoText {
+  background: transparent !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sectionTwo {
   text-align: center;
 }
 /* End Home */
@@ -60,11 +83,21 @@
 /* Navbar Styles */
 
 .navbar {
-  border-bottom: #566473 solid 2px;
+  /* border-bottom: #566473 solid 2px; */
   font-family: 'Anton', sans-serif;
   font-size: 20px;
+  /* background: #f8f9fa; */
+}
+.scrolled {
+  background: #f8f9fa;
 }
 #signup {
+  margin: 5px;
+  border-color: #f8f9fa;
+  background: transparent;
+  color: #f8f9fa;
+}
+.scrolled #signup {
   margin: 5px;
   border-color: #566473;
   background-color: #566473;
@@ -72,12 +105,24 @@
 }
 #login, #logout {
   margin: 5px;
+  border-color: #f8f9fa;
+  background: transparent;
+  color: #f8f9fa;
+}
+.scrolled #login, .scrolled #logout {
+  margin: 5px;
   border-color: #566473;
+  background-color: #f8f9fa;
   color: #566473;
 }
 #homeNavBtn,
 #accountNavBtn,
 #guideNavBtn {
+  color: #f8f9fa;
+}
+.scrolled #homeNavBtn,
+.scrolled #accountNavBtn,
+.scrolled #guideNavBtn {
   color: #566473;
 }
 .nav-link.active {
@@ -107,11 +152,13 @@
 .footer {
   border-top: #566473 solid 2px;
   border-bottom: none;
+  margin-top: 100px;
 }
 #footerText {
   font-size: 15px;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* End Footer */
