@@ -8,18 +8,19 @@ class Guide extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
-          <Col size="md-12">
-            <h2>User Guide</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-6">
-            <img id="dronePart" src={dronePart} alt="drone" width="100%" />
-          </Col>
-          <Col size="md-6">
-            {/* <img id="dronePartNum" src={dronePartNum} alt="drone" width="100%" /> */}
-            <ol id="droneParts">
+        <div className="guidePage">
+          <Row>
+            <Col size="md-12">
+              <h2>User Guide</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col size="md-6">
+              <img id="dronePart" src={dronePart} alt="drone" width="100%" />
+            </Col>
+            <Col size="md-6">
+              {/* <img id="dronePartNum" src={dronePartNum} alt="drone" width="100%" /> */}
+              <ol id="droneParts">
                 <li>Propellers</li>
                 <li>Motors</li>
                 <li>Air Status Indicator</li>
@@ -30,9 +31,10 @@ class Guide extends Component {
                 <li>Flight Battery</li>
                 <li>Micro USB Port</li>
                 <li>Propeller Guards</li>
-            </ol>
-          </Col>
-        </Row>
+              </ol>
+            </Col>
+          </Row>
+        </div>
       </Container>
     );
   }

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/takeFlight.svg";
 import "../../App.css";
-import SignUp from "../SignUp/index";
-import LogIn from "../LogIn/index";
-import LogOut from "../LogOut/index";
+// import SignUp from "../SignUp/index";
+// import LogIn from "../LogIn/index";
+// import LogOut from "../LogOut/index";
 // import AUTHAPI from "../../utils/google-auth";
 // import PrivacyPolicy from './components/privacy-policy';
 
@@ -71,15 +71,15 @@ class NavBar extends Component {
           className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul className="navbar-nav">
+          {/* <ul className="navbar-nav">
             {this.props.user.email ? 
             <LogOut {...this.props} /> :
             <LogIn {...this.props} /> }
 
-            {/* <LogOut {...this.props} />
-            <LogIn {...this.props} /> */}
+            <LogOut {...this.props} />
+            <LogIn {...this.props} />
             <SignUp {...this.props} />
-          </ul>
+          </ul> */}
         </div>
       </nav>
     );

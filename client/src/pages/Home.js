@@ -6,7 +6,7 @@ import "../App.css";
 import Farhan from "../components/Cards/Farhan";
 import Jose from "../components/Cards/Jose";
 import Robert from "../components/Cards/Robert";
-import SignUp from "../components/SignUp/index";
+// import SignUp from "../components/SignUp/index";
 
 class Home extends Component {
   render() {
@@ -32,8 +32,9 @@ class Home extends Component {
                     </h2>
                     <br />
                     <br />
-                    <h4>Sign Up Now!</h4>
-                    <SignUp />
+                    <h4>Sign Up Coming Soon!</h4>
+                    {/* <h4>Sign Up Now!</h4> */}
+                    {/* <SignUp /> */}
                   </div>
                 </Col>
               </Row>
